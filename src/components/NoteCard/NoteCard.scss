@@ -1,0 +1,24 @@
+.noteCard {
+  max-width: 250px;
+  width: 100%;
+  height: 300px;
+  border-radius: 6px;
+  margin: 0 auto;
+  overflow: hidden;
+  cursor: grab;
+  user-select: none;
+}
+
+.noteCard__text {
+  padding: 10px;
+}
+
+.cardLive {
+  border: 1px dashed gray;
+  opacity: 0.3;
+}
+
+.isElemOver {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  opacity: 0.6;
+}

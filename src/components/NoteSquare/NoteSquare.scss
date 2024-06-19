@@ -1,0 +1,53 @@
+.addNote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-color: lightgreen;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid gray;
+  margin: 0 auto;
+}
+
+.addNote__plus {
+  font-size: 20px;
+  color: gray;
+
+  @media (width < 450px) {
+    font-size: 15px;
+  }
+}
+
+.green {
+  background-color: #addfad;
+}
+.lightLavender {
+  background-color: #c5c5ec;
+}
+.lightPeach {
+  background-color: #ffe4b5;
+}
+.lightBlue {
+  background-color: #add8e6;
+}
+.lightPurple {
+  background-color: #d8bfd8;
+}
+
+.lightGray {
+  background-color: #b8b8b8;
+}
+
+.lightPink {
+  background-color: #ffb6c1;
+}
+
+.lightSalad {
+  background-color: #90ee90;
+}
+
+.lightCoral {
+  background-color: #f08080;
+}

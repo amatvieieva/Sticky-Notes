@@ -1,0 +1,135 @@
+.createNotesWrapper {
+  overflow: hidden;
+  position: fixed;
+  width: 300px;
+  height: 100vh;
+  background-color: #fff;
+  padding: 6px;
+  transform: translateX(-270px);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  @media (width < 770px) {
+    width: 250px;
+    transform: translateX(-220px);
+  }
+
+  @media (width < 450px) {
+    width: 180px;
+    transform: translateX(-150px);
+  }
+}
+
+.opening {
+  overflow-y: scroll;
+  animation: open 550ms ease-out forwards;
+  @media (width < 770px) {
+    animation: openMiddle 550ms ease-out forwards;
+  }
+
+  @media (width < 450px) {
+    animation: openSmall 550ms ease-out forwards;
+  }
+}
+
+@keyframes open {
+  0% {
+    transform: translateX(-270px);
+  }
+  100% {
+    transform: translateX(0px);
+    overflow-y: scroll;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+}
+
+@keyframes openMiddle {
+  0% {
+    transform: translateX(-220px);
+  }
+  100% {
+    transform: translateX(0px);
+    overflow-y: scroll;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+}
+
+@keyframes openSmall {
+  0% {
+    transform: translateX(-150px);
+  }
+  100% {
+    transform: translateX(0px);
+    overflow-y: scroll;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+}
+
+.closing {
+  overflow-y: hidden;
+  animation: close 550ms ease-out forwards;
+
+  @media (width < 770px) {
+    animation: closeMiddle 550ms ease-out forwards;
+  }
+
+  @media (width < 450px) {
+    animation: closeSmall 550ms ease-out forwards;
+  }
+}
+
+@keyframes close {
+  0% {
+    transform: translateX(-0px);
+  }
+  100% {
+    transform: translateX(-270px);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+}
+
+@keyframes closeMiddle {
+  0% {
+    transform: translateX(-0px);
+  }
+  100% {
+    transform: translateX(-220px);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+}
+
+@keyframes closeSmall {
+  0% {
+    transform: translateX(-0px);
+  }
+  100% {
+    transform: translateX(-150px);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+}
+
+.closingContent {
+  animation: closeContent 550ms ease-out forwards;
+}
+
+@keyframes closeContent {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.createNotes__arrow {
+  font-size: 24px;
+}

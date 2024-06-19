@@ -1,0 +1,36 @@
+.noteCardHeader {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #bebebe;
+  padding: 4px 6px;
+}
+.noteCardHeader__actions {
+  position: absolute;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.noteCardHeader__actionsItem {
+  font-size: 22px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.noteCard__favorite {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.noteCard__favoriteIcon {
+  font-size: 22px;
+}

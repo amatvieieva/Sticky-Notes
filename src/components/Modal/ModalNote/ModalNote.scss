@@ -1,0 +1,51 @@
+.modalCreateNote__title {
+  text-align: center;
+  font-size: 22px;
+}
+
+.modalCreateNote__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modalCreateNote__textarea {
+  resize: none;
+  height: 200px;
+}
+
+.modalCreateNote__label {
+  margin-top: 16px;
+  font-size: 18px;
+}
+
+.modalCreateNote__field {
+  padding: 4px 6px;
+  outline: none;
+  border: 1px solid gray;
+
+  &:focus {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.modalCreateNote__btnSave {
+  font-family: "Lato-Regular";
+  font-size: 18px;
+  padding: 2px 4px;
+  margin: 16px 0;
+  color: black;
+  outline: none;
+  border: 1px solid gray;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.modalNote__NoteSquareWrapper {
+  width: 75%;
+  margin: 0 auto;
+
+  @media (width < 450px) {
+    width: 100%;
+  }
+}
